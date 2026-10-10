@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LinguaBridge · Inglés y Español</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="logo">Lingua<span>Bridge</span></div>
+    <nav id="nav"></nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero"><h1 id="title"></h1><p id="sub"></p></div>
+  <div class="chips" id="chips"></div>
+
+  <details class="card" id="formWrap">
+    <summary>✍️ Publicar información / Share something</summary>
+    <form id="form">
+      <select id="fTopic"></select>
+      <input id="fName" placeholder="Tu nombre / Your name" maxlength="40" required>
+      <input id="fTitle" placeholder="Título / Title" maxlength="100" required>
+      <textarea id="fText" placeholder="Contenido / Content" maxlength="3000" required></textarea>
+      <input id="fImg" type="file" accept="image/*">
+      <button class="btn" type="submit">Publicar</button>
+    </form>
+  </details>
+
+  <div id="list"></div>
+</main>
+
+<footer>Las publicaciones se guardan en este navegador · Posts are stored in this browser</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
